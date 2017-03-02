@@ -1,0 +1,1041 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    letter-spacing: 0em;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333333;
+    font-size: 1.2em;
+    margin-left: 40px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #c92b1b;
+}
+
+.navbar-default .navbar-brand {
+    color: #000;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #c92b1b;
+    background-color: transparent;
+}
+
+#about {
+    background-color: #fff;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.4em;
+    margin: 0;
+    line-height: 1.8em;
+}
+
+
+#descrwords {
+    font-weight: 900;
+    font-size: 4em;
+}
+
+
+hr {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+.intro-section {
+    /*background: #FEF9E3;*/
+    /*background: #cdebf9;*/
+    /*background: linear-gradient( #cdebf9 60%, #fd8953, #000040 );*/
+    /*background: linear-gradient( #0b0b31, #392133, #FA6156, #FD896B, #FDBF5B 5%, #FEE47E 6%, #cdebf9 33%);*/
+    margin-top: 0;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+.letters {
+    position:absolute;
+    z-index: 10;
+}
+
+.landing-art {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.name-art {
+    top: 50%;
+}
+
+/*.ground-1 {
+    bottom: 0%;
+    fill: #ffe7ba;
+}*/
+
+
+
+.intro-info {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+
+.intro-info {
+    padding-top: 5%;
+
+}
+
+.name-text {
+    font-size: 10em;
+    z-index: 10;
+}
+
+.add-info {
+    fill-opacity: 0;
+    animation-name: FillIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    font-size: 3.5em;
+    z-index: 10;
+}
+
+
+.intro-info {
+    z-index: 10;
+    padding-top: 0;
+}
+
+.intro-section {
+    padding-top: 0;
+}
+
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}
+
+/******** section 1: about ********/
+
+
+h1 {
+    font-size: 4em;
+}
+
+.title h1{
+    padding-bottom: 30px;
+
+    text-align: center;
+}
+
+.about-info h3{
+    font-size: 2.2em;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 5%;
+    color: #333333;
+}
+
+.style-font {
+    font-weight: 400;
+    color: #c92b1b;
+}
+
+.about-cat {
+    font-size: 1.5em;
+    padding-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+    line-height: 48px;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+.about-cats p{
+    font-weight: 300;
+    color: #333333;
+    font-size: 1.3em;
+
+}
+
+.section1 {
+    width: 100A%;
+    position: relative;
+    /*background: #f0f0f0*/
+    background-image: none;
+    padding-top: 100px;
+    margin-top: -20px;
+    overflow: hidden;
+
+}
+
+
+a {
+    color: #bdbdbd;
+
+}
+
+a:hover {
+    color: #c92b1b;
+}
+
+.row {
+    margin-top: 40px;
+    padding-top: -10px;
+    border-collapse:collapse;
+}
+
+.resume-download {
+    border-left: 3px solid red;
+}
+
+
+.download_resume {
+    font-size: 3.5em;
+
+    color: red;
+}
+
+
+a{
+    color: #bdbdbd;
+}
+
+
+
+/******** section 2: projects ********/
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.thumbnail {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 320px;
+    height: 240px;
+
+    -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+    -moz-transform: translate(-50%,-50%); /* Firefox */
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
+}
+
+.image-arrow {
+    width: 100%;
+    height: 100%;
+}
+
+.image-arrow img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.image-arrow:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+
+.project-title {
+    font-size: 1.5em;
+    line-height: 48px;
+    letter-spacing: 1px;
+    color: #333333;
+    text-align: center;
+}
+
+.project-date {
+    text-align: center;
+}
+
+
+.section2 {
+    width: 100%;
+    background-image: none;
+    padding-top: 100px;
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+
+
+
+/* project images */
+.project-image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.project-image:hover:before {
+    opacity: 0.5
+}
+
+.col-md-6 {
+    text-align: center;
+}
+
+.img-trans {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.overlay {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .5s;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.overlay-descr {
+    color: black;
+}
+
+.img-trans:hover .overlay,
+.overlay:hover {
+  height: 100%;
+
+  background: #c92b1b;
+  opacity: 0.9;
+}
+
+.img-trans > img {
+  display: block;/* Prevent inline gap under image*/
+  border: 2px solid #333333;
+}
+
+
+
+/******** section 3: contact me ********/
+
+.section3 {
+    width: 100%;
+    background: white;
+    background-image: none;
+    padding-bottom: 100px;
+}
+
+
+.message {
+    align-items: center;
+    /*padding-left: 25%;
+    padding-right: 25%;*/
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    color: ##454545;
+}
+
+.email-form{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.email-form p {
+    font-weight: 300;
+}
+
+.input-name {
+    float: left;
+}
+
+
+
+.message input {
+  border: none;
+  color: black;
+  font-size: inherit;
+  text-align: left;
+  position: relative;
+  width: 100%;
+  outline: none;
+}
+
+.message input::after {
+  content: '';
+  position: absolute; /* important */
+}
+
+
+textarea {
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    outline: none;
+}
+
+
+
+.two{
+    color:blue;
+    position:absolute;
+    z-index:1;
+    border-bottom: 3px lightgray solid;
+    width: 100%;
+}
+.one {
+    position:absolute;
+    z-index:2;
+    border-bottom: 3px #c92b1b solid;
+    text-decoration: none;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+}
+.one.clicked {
+    border-bottom: 3px solid #c92b1b;
+    width: 100%;
+}
+
+.two1{
+    color:blue;
+    position:absolute;
+    z-index:1;
+    border-bottom: 3px lightgray solid;
+    width: 100%;
+}
+.one1{
+    position:absolute;
+    z-index:2;
+    border-bottom: 3px #c92b1b solid;
+    text-decoration: none;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+}
+.one1.clicked {
+    border-bottom: 3px solid #c92b1b;
+    width: 100%;
+}
+
+
+.two2{
+    color:blue;
+    position:absolute;
+    z-index:1;
+    border-bottom: 3px lightgray solid;
+    width: 100%;
+}
+.one2{
+    position:absolute;
+    z-index:2;
+    border-bottom: 3px #c92b1b solid;
+    text-decoration: none;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+}
+.one2.clicked {
+    border-bottom: 3px solid #c92b1b;
+    width: 100%;
+}
+
+
+.two3{
+    color:blue;
+    position:absolute;
+    z-index:1;
+    border-bottom: 3px lightgray solid;
+    width: 100%;
+}
+.one3{
+    position:absolute;
+    z-index:2;
+    border-bottom: 3px #c92b1b solid;
+    text-decoration: none;
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+}
+.one3.clicked {
+    border-bottom: 3px solid #c92b1b;
+    width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+input.submit-button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    background: transparent;
+    text-align: center;
+}
+
+input.submit-button:hover {
+    color: #c92b1b;
+}
+
+.submit-size {
+    font-size: 1.4em;
+
+}
+
+.name-art {
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50% 0px;
+}
+
+/**** name effects ******/
+.name_p_1{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_p_2{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_p_3{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_a_1{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_a_2{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #939393;
+    stroke-opacity: 1;
+}
+
+.name_a_3{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_r_1{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_r_2{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #d3d3d3;
+    stroke-opacity: 1;
+}
+
+.name_i_1{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_i_2{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_i_3{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_i_4{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #d3d3d3;
+    stroke-opacity: 1;
+}
+
+.name_s_1{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #d3d3d3;
+    stroke-opacity: 1;
+}
+
+.name_s_2{
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_s_3 {
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_d_1 {
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #bdbdbd;
+    stroke-opacity: 1;
+}
+
+.name_d_2 {
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_o_1 {
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #a8a8a8;
+    stroke-opacity: 1;
+}
+
+.name_o_2 {
+    fill-opacity: 0;
+    animation-name: draw, FillIn;
+    animation-duration: 2.5s, 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s, 1s;
+    transform-origin: 50% 50%;
+    stroke-width: 40;
+    stroke: #d3d3d3;
+    stroke-opacity: 1;
+}
+
+.add-info {
+    fill-opacity: 0;
+    animation-name: FillIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    font-size: 3.5em;
+    z-index: 10;
+}
+
+/*button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  margin: 1em;
+  padding: 1em 2em;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  vertical-align: middle;
+}
+button::before, button::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+a.draw-border {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px transparent;
+  color: purple;
+  font-size: inherit;
+  margin: 1em;
+  padding: 1em 2em;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  vertical-align: middle;
+}
+a.draw-border::before, a.draw-border::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+.draw-border:before, .draw-border:after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.draw-border::before {
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    -webkit-transform: scale3d(0, 1, 1);
+            transform: scale3d(0, 1, 1);
+}
+
+.draw-border::after {
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    -webkit-transform: scale3d(1, 0, 1);
+            transform: scale3d(1, 0, 1);
+}
+
+.draw-border:hover::before, .draw-border:hover::after {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+}*/
+
+.navbar-default .navbar-nav>.active>a {
+    background-color: transparent;
+    color: #c92b1b;
+}
+
+.underline-btn-letter {
+    transition: all .2s ease-in;
+}
+
+
+
+#send_email{
+    font-size: 1.5em;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/******** EARTHQUAKE WAVES ANIMATION *******/
+/*.wave_1 {
+    stroke-dasharray: 1000;
+stroke-dashoffset: 1000;
+animation: dash 5s linear forwards;
+    /*fill-opacity: 1;
+    animation-name: draw
+    animation-duration: 2.5s
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 0s
+    stroke-width: 20;
+    stroke: red;*/
+
+.wave_1 {
+    stroke: #bdbdbd;
+    stroke-width: 40;
+    animation-name: draw;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+}
+
+.wave_2 {
+    stroke: #bdbdbd;
+    stroke-width: 40;
+    animation-name: draw;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+}
+
+.wave_3 {
+    stroke: #bdbdbd;
+    stroke-width: 40;
+    animation-name: draw;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+}
+
+.wave_4 {
+    stroke: #bdbdbd;
+    stroke-width: 40;
+    animation-name: draw;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+}
+
+.wave_5 {
+    stroke: #bdbdbd;
+    stroke-width: 40;
+    animation-name: draw;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+}
+
+.wave_6 {
+    stroke: #bdbdbd;
+    stroke-width: 40;
+    animation-name: draw;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+}
+.waves_container {
+    position: relative;
+}
+
+
+.waves_container .about_waves {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.section3 .contact_waves {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
