@@ -11,7 +11,7 @@ var PORT = 8080;
 // that makes nontrivial applications easier to build
 var express = require('express');
 var nodemailer = require('nodemailer');
-var config = require('./.config.js');
+// var config = require('./.config.js');
 
 require("dotenv").load();
 
