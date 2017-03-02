@@ -12,7 +12,9 @@ var PORT = 8080;
 var express = require('express');
 var nodemailer = require('nodemailer');
 var config = require('./.config.js');
-console.log(config.email_password);
+
+require("dotenv").load();
+
 
 // Create the server instance
 var app = express();
@@ -35,10 +37,14 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
 
     service: 'Gmail',
     auth: {
+        // // enter your gmail account
+        // user: config.email_username,
+        // // enter your gmail password
+        // pass: config.email_password
         // enter your gmail account
-        user: config.email_username,
+        user: process.env.EMAIL_USERNAME,
         // enter your gmail password
-        pass: config.email_password
+        pass: process.env.EMAIL_PASSWORD
     }
 });
 

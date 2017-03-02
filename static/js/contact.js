@@ -12,7 +12,7 @@ $(document).ready(function () {
         text = $("#textarea1").val();
         // $("#message").text("Sending E-mail...Please wait");
         console.log(text);
-        $.get("http://www.pariscrisdo.com/send", {
+        $.get("http://localhost:8080/send", {
             to: to,
             name: name,
             user: user,
