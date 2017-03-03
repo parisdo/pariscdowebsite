@@ -13,8 +13,6 @@ var express = require('express');
 var nodemailer = require('nodemailer');
 // var config = require('./.config.js');
 
-require("dotenv").load();
-
 
 // Create the server instance
 var app = express();
