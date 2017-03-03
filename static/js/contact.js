@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    var stringPathName = window.location.pathname
-    console.log("this is the path" + stringPathName);
     var user, to, subject, text;
     var send_email = document.getElementById("send_email myBtn");
 
