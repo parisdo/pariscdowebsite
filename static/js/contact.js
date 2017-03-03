@@ -10,8 +10,8 @@ $(document).ready(function () {
         name = $("#name").val();
         user = $("#user_email").val();
         text = $("#textarea1").val();
-
-        $.get("http://localhost:5000/send", {
+        var url = document.location.href;
+        $.get(url + "send", {
             to: to,
             name: name,
             user: user,
