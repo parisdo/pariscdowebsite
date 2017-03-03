@@ -5,7 +5,7 @@
  * Created by: Michael Bernstein
  * Last updated: December 2013
  */
-var PORT = 8080;
+var PORT = 5000;
 
 // Express is a web framework for node.js
 // that makes nontrivial applications easier to build
@@ -32,6 +32,13 @@ app.use(express.static(__dirname + '/static'));
 app.get('/', function (req, res) {
     res.sendfile('./static/index.html');
 });
+
+if(process.env.EMAIL_USERNAME) {
+    console.log(process.env.EMAIL_TEST)
+}
+else {
+    console.log('No set!');
+}
 
 var smtpTransport = nodemailer.createTransport("SMTP", {
 
