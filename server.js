@@ -42,9 +42,12 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
         // // enter your gmail password
         // pass: config.email_password
         // enter your gmail account
-        user: process.env.EMAIL_USERNAME,
+        // user: process.env.EMAIL_USERNAME,
+        // // enter your gmail password
+        // pass: process.env.EMAIL_PASSWORD
+        user: "pariscdo@gmail.com",
         // enter your gmail password
-        pass: process.env.EMAIL_PASSWORD
+        pass: "hi"
     }
 });
 
