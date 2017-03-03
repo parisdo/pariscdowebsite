@@ -5,7 +5,7 @@
  * Created by: Michael Bernstein
  * Last updated: December 2013
  */
-// var PORT = 5000;
+var PORT = 5000;
 
 // Express is a web framework for node.js
 // that makes nontrivial applications easier to build
@@ -37,17 +37,10 @@ var smtpTransport = nodemailer.createTransport("SMTP", {
 
     service: 'Gmail',
     auth: {
-        // // enter your gmail account
-        // user: config.email_username,
-        // // enter your gmail password
-        // pass: config.email_password
-        // enter your gmail account
-        // user: process.env.EMAIL_USERNAME,
-        // // enter your gmail password
         // pass: process.env.EMAIL_PASSWORD
-        user: "pariscdo@gmail.com",
+        user: process.env.EMAIL_USERNAME,
         // enter your gmail password
-        pass: "hi"
+        pass: process.env.EMAIL_PASSWORD
     }
 });
 

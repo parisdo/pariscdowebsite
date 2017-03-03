@@ -10,10 +10,7 @@ $(document).ready(function () {
         name = $("#name").val();
         user = $("#user_email").val();
         text = $("#textarea1").val();
-        // $("#message").text("Sending E-mail...Please wait");
-        // var url = window.location.href;
-        // $.get(url + "send", {
-        var url = window.location.href;
+
         $.get("http://localhost:5000/send", {
             to: to,
             name: name,
