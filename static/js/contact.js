@@ -11,8 +11,7 @@ $(document).ready(function () {
         user = $("#user_email").val();
         text = $("#textarea1").val();
         // $("#message").text("Sending E-mail...Please wait");
-        console.log(text);
-        $.get("http://localhost:5000/send", {
+        $.get("http://pariscdowebsite.herokuapp.com/send", {
             to: to,
             name: name,
             user: user,
