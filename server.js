@@ -5,7 +5,7 @@
  * Created by: Michael Bernstein
  * Last updated: December 2013
  */
-var PORT = 5000;
+// var PORT = 5000;
 
 // Express is a web framework for node.js
 // that makes nontrivial applications easier to build
@@ -75,7 +75,7 @@ app.get('/send', function (req, res) {
 });
 
 // Start the server
-var port = process.env.PORT || PORT; // 80 for web, 3000 for development
+var port = process.env.PORT || 5000; // 80 for web, 3000 for development
 app.listen(port, function() {
 	console.log("Node.js server running on port %s", port);
 });
