@@ -1,4 +1,3 @@
-console.log("modal.js");
 // Get the modal
 var modal = document.getElementById('modal1');
 
