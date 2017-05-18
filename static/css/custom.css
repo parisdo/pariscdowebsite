@@ -12,10 +12,6 @@ body {
     margin-left: 40px;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    color: #c92b1b;
-}
-
 .navbar-default .navbar-brand {
     color: #000;
 }
@@ -25,10 +21,6 @@ body {
     border-color: transparent;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #c92b1b;
-    background-color: transparent;
-}
 
 #about {
     background-color: #fff;
@@ -67,23 +59,9 @@ hr {
     margin-top: 0;
     z-index: 1;
     margin-bottom: 0;
+    background: #FF493B;
 }
 
-.letters {
-    position:absolute;
-    z-index: 10;
-}
-
-.landing-art {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-}
-
-.name-art {
-    top: 50%;
-}
 
 /*.ground-1 {
     bottom: 0%;
@@ -109,6 +87,18 @@ hr {
 }
 
 .add-info {
+    fill-opacity: 0;
+    animation-name: FillIn;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    font-size: 3.5em;
+    z-index: 10;
+}
+
+.backgroundSquare {
     fill-opacity: 0;
     animation-name: FillIn;
     animation-duration: 2.5s;
@@ -177,32 +167,12 @@ h1 {
 
 }
 
-.section1 {
-    width: 100A%;
-    position: relative;
-    /*background: #f0f0f0*/
-    background-image: none;
-    padding-top: 100px;
-    margin-top: -20px;
-    overflow: hidden;
 
-}
-
-
-a {
-    color: #bdbdbd;
-
-}
 
 a:hover {
     color: #c92b1b;
 }
 
-.row {
-    margin-top: 40px;
-    padding-top: -10px;
-    border-collapse:collapse;
-}
 
 .resume-download {
     border-left: 3px solid red;
@@ -213,11 +183,6 @@ a:hover {
     font-size: 3.5em;
 
     color: red;
-}
-
-
-a{
-    color: #bdbdbd;
 }
 
 
@@ -284,8 +249,6 @@ img {
 .section2 {
     width: 100%;
     background-image: none;
-    padding-top: 100px;
-    margin-top: -20px;
     overflow: hidden;
 }
 
@@ -404,17 +367,6 @@ img {
 }
 
 
-textarea {
-    border: none;
-    color: black;
-    background-color: transparent;
-    font-weight: 300;
-    font-size: 1.5em;
-    text-align: left;
-    position: relative;
-    width: 100%;
-    outline: none;
-}
 
 
 
@@ -515,6 +467,7 @@ input.submit-button {
     font-size: 24px;
     background: transparent;
     text-align: center;
+    width: 100%;
 }
 
 input.submit-button:hover {
@@ -531,361 +484,6 @@ input.submit-button:hover {
     height: 100%;
     transform-origin: 50% 50% 0px;
 }
-
-/**** name effects ******/
-.name_p_1{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_p_2{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_p_3{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_a_1{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_a_2{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #939393;
-    stroke-opacity: 1;
-}
-
-.name_a_3{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_r_1{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_r_2{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #d3d3d3;
-    stroke-opacity: 1;
-}
-
-.name_i_1{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_i_2{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_i_3{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_i_4{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #d3d3d3;
-    stroke-opacity: 1;
-}
-
-.name_s_1{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #d3d3d3;
-    stroke-opacity: 1;
-}
-
-.name_s_2{
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_s_3 {
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_d_1 {
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #bdbdbd;
-    stroke-opacity: 1;
-}
-
-.name_d_2 {
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_o_1 {
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #a8a8a8;
-    stroke-opacity: 1;
-}
-
-.name_o_2 {
-    fill-opacity: 0;
-    animation-name: draw, FillIn;
-    animation-duration: 2.5s, 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 0s, 1s;
-    transform-origin: 50% 50%;
-    stroke-width: 40;
-    stroke: #d3d3d3;
-    stroke-opacity: 1;
-}
-
-.add-info {
-    fill-opacity: 0;
-    animation-name: FillIn;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-    animation-delay: 1s;
-    font-size: 3.5em;
-    z-index: 10;
-}
-
-/*button {
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 0 2px #f45e61;
-  color: #f45e61;
-  font-size: inherit;
-  font-weight: 700;
-  margin: 1em;
-  padding: 1em 2em;
-  text-align: center;
-  text-transform: capitalize;
-  position: relative;
-  vertical-align: middle;
-}
-button::before, button::after {
-  box-sizing: border-box;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-a.draw-border {
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  box-shadow: inset 0 0 0 2px transparent;
-  color: purple;
-  font-size: inherit;
-  margin: 1em;
-  padding: 1em 2em;
-  text-align: center;
-  text-transform: capitalize;
-  position: relative;
-  vertical-align: middle;
-}
-a.draw-border::before, a.draw-border::after {
-  box-sizing: border-box;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-
-.draw-border:before, .draw-border:after {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.draw-border::before {
-    border-top: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
-    -webkit-transform: scale3d(0, 1, 1);
-            transform: scale3d(0, 1, 1);
-}
-
-.draw-border::after {
-    border-left: 2px solid lightgray;
-    border-right: 2px solid lightgray;
-    -webkit-transform: scale3d(1, 0, 1);
-            transform: scale3d(1, 0, 1);
-}
-
-.draw-border:hover::before, .draw-border:hover::after {
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
-}*/
 
 .navbar-default .navbar-nav>.active>a {
     background-color: transparent;
@@ -954,88 +552,6 @@ animation: dash 5s linear forwards;
     stroke-width: 20;
     stroke: red;*/
 
-.wave_1 {
-    stroke: #bdbdbd;
-    stroke-width: 40;
-    animation-name: draw;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-}
-
-.wave_2 {
-    stroke: #bdbdbd;
-    stroke-width: 40;
-    animation-name: draw;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-}
-
-.wave_3 {
-    stroke: #bdbdbd;
-    stroke-width: 40;
-    animation-name: draw;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-}
-
-.wave_4 {
-    stroke: #bdbdbd;
-    stroke-width: 40;
-    animation-name: draw;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-}
-
-.wave_5 {
-    stroke: #bdbdbd;
-    stroke-width: 40;
-    animation-name: draw;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-}
-
-.wave_6 {
-    stroke: #bdbdbd;
-    stroke-width: 40;
-    animation-name: draw;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-}
-.waves_container {
-    position: relative;
-}
-
-
-.waves_container .about_waves {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-
-
-
-.section3 .contact_waves {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-a {
-    color: #bdbdbd;
-}
 
 @keyframes draw {
   to {

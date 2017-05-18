@@ -1,0 +1,89 @@
+.projects-title {
+    text-align: left;
+}
+
+h4.projects-title {
+    font-weight: 300;
+    font-size: 2em;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+.box5 {
+    padding-left: 84px;
+    padding-right: 84px;
+    position: relative;
+    background: #FF493B;
+}
+
+.box5:before {
+    background: linear-gradient(90deg,transparent 0,transparent 50%,#fff 0,#fff);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box6 {
+    padding-bottom: 90px;
+    padding-left: 20%;
+    padding-right: 10%;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    background: #FF493B;
+}
+
+
+.project-item {
+    background: #FF493B;
+    padding-right: 0px;
+}
+
+.project-name {
+    text-align: center;
+    padding: 30px 0 30px 0;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    background: #fff;
+}
+
+.project-col {
+    margin-right: 10px;
+    background: #FF493B;
+}
+
+#raceme-item, #arrestme-item, #frank-item {
+  position: relative;column-width: 
+  top: 0;
+  transition: top ease 0.5s;
+  -webkit-box-shadow: 3px -2px 36px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px -2px 36px -10px rgba(0,0,0,0.75);
+box-shadow: 3px -2px 36px -10px rgba(0,0,0,0.75);
+}
+
+
+#raceme-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -10px;
+}
+
+#arrestme-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -10px;
+}
+
+
+#frank-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: -10px;
+}
+
+a {
+    color: black;
+}

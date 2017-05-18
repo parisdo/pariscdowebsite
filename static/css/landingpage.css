@@ -1,0 +1,52 @@
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    font-weight: 400;
+    letter-spacing: .5px;
+
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+
+}
+
+.navbar-default .navbar-nav>.active>a {
+    color: black;
+}
+
+.intro-section {
+    background-color: #fff;
+}
+
+.page-scroll {
+    color: red;
+}
+
+.navbar-default {
+    float: none;
+}
+
+.navbar .nav, .navbar .nav > li {
+    text-align:center;
+}
+
+
+@media (min-width:768px) {
+/* centered navigation */
+ .nav.navbar-nav {
+     float: left;
+ }
+ .nav.navbar-nav {
+     /*padding: 0;*/
+     position: relative;
+     left: 50%;
+     text-align: center;
+ }
+ .nav.navbar-nav > li {
+     right: 50%;
+ }
+ .nav.navbar-nav li {
+    text-align: left
+ }
+}

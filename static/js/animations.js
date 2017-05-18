@@ -1,30 +1,3 @@
-/* Sliding red border for contact form */
-$(document).ready(function () {
-    $( "#name" ).focus(function() {
-        $('.one').addClass('clicked');
-    });
-
-    $( "#name" ).blur(function() {
-        $('.one').removeClass('clicked');
-    });
-
-    $( "#user_email" ).focus(function() {
-        $('.one2').addClass('clicked');
-    });
-
-    $( "#user_email" ).blur(function() {
-        $('.one2').removeClass('clicked');
-    });
-
-    $( "#textarea1" ).focus(function() {
-        $('.one3').addClass('clicked');
-    });
-
-    $( "#textarea1" ).blur(function() {
-        $('.one3').removeClass('clicked');
-    });
-
-});
 
 $(document).on("focusin", function(e) {
     if ($(e.target).is('#sliding-border') === false) {
@@ -81,6 +54,8 @@ var $name_d_2 = $('.name_d_2');
 var $name_o_1 = $('.name_o_1');
 var $name_o_2 = $('.name_o_2');
 var $add_info = $('.add-info');
+var $backgroundSquare = $('.backgroundSquare');
+
 var $nav_about = $('.nav-about');
 var $nav_about_letters = $('.nav-about-letters');
 var $nav_projects = $('.nav-projects');
@@ -310,46 +285,3 @@ var name_o_2_length = name_o_2.getTotalLength();
 
 $('.name_o_2').css('stroke-dashoffset', name_o_2_length);
 $('.name_o_2').css('stroke-dasharray', name_o_2_length);
-
-
-/* earthquakes lines */
-var wave_1 = document.querySelector('.wave_1');
-var wave_1_length = wave_1.getTotalLength();
-
-$('.wave_1').css('stroke-dashoffset', wave_1_length);
-$('.wave_1').css('stroke-dasharray', wave_1_length);
-
-var wave_2 = document.querySelector('.wave_2');
-var wave_2_length = wave_2.getTotalLength();
-
-$('.wave_2').css('stroke-dashoffset', wave_2_length);
-$('.wave_2').css('stroke-dasharray', wave_2_length);
-
-
-/* earthquakes lines */
-var wave_3 = document.querySelector('.wave_3');
-var wave_3_length = wave_3.getTotalLength();
-
-$('.wave_3').css('stroke-dashoffset', wave_3_length);
-$('.wave_3').css('stroke-dasharray', wave_3_length);
-
-/* earthquakes lines */
-var wave_4 = document.querySelector('.wave_4');
-var wave_4_length = wave_4.getTotalLength();
-
-$('.wave_4').css('stroke-dashoffset', wave_4_length);
-$('.wave_4').css('stroke-dasharray', wave_4_length);
-
-/* earthquakes lines */
-var wave_5 = document.querySelector('.wave_5');
-var wave_5_length = wave_5.getTotalLength();
-
-$('.wave_5').css('stroke-dashoffset', wave_5_length);
-$('.wave_5').css('stroke-dasharray', wave_5_length);
-
-/* earthquakes lines */
-var wave_6 = document.querySelector('.wave_6');
-var wave_6_length = wave_6.getTotalLength();
-
-$('.wave_6').css('stroke-dashoffset', wave_6_length);
-$('.wave_6').css('stroke-dasharray', wave_6_length);
